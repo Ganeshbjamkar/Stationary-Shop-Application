@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Shop Application</title>
+</head>
+<body>
+    <h1>Welcome to Stationery Shop</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Red Pen</td>
+                <td>Ball Pen</td>
+                <td>10 &#8377;</td>
+                <td>
+                    <input type="number" min="0" max="1000" value="0" data-item="pen">
+                </td>
+                <td>
+                    <button onclick="addItem('pen')">Add Item</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>White Pages</td>
+                <td>50 &#8377;</td>
+                <td>
+                    <input type="number" min="0" max="1000" value="0" data-item="notebook">
+                </td>
+                <td>
+                    <button onclick="addItem('notebook')">Add Item</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <br>
+    <br>
+    
+    <div id="inventory"></div>
+
+
+    <script src="style.js"></script>
+</body>
+</html>
